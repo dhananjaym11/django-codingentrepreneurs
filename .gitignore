@@ -1,0 +1,12 @@
+*.sqlite3
+*.pyc
+.env
+env/
+media/
+__pycache__/
+/static/
+*/testdata/
+/node_modules/
+package-lock.json
+db.sqlite3*
+.vscode/
