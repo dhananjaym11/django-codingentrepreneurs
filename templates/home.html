@@ -1,2 +1,14 @@
-<h1>Home Page</h1>
-<p>Current user is {{user}}</p>
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Home Page</h1>
+    <p>Current user is {{request.user}}</p>
+    <p>Text = {{my_text}}</p>
+    <ul>
+        {% if my_list %}
+            {% for item in my_list %}
+            <li>{{item}}</li>
+            {% endfor %}
+        {% endif %}
+    </ul>
+{% endblock %}
